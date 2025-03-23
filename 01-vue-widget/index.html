@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Learning Vue</title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<style>
+  .box {
+    display: inline-block;
+    border: 1px solid black;
+    background: grey;
+    padding: 2rem;
+    margin: 1rem;
+  }
+  li {
+    list-style: none;
+  }
+  h2 {
+    margin: 0;
+  }
+</style>
+<body>
+  <h1>Hello, Vue!</h1>
+
+  <div id="app">
+    <!-- <div v-if="showBooks">
+      <p>{{ title }} - {{author}} - {{ age }}</p>
+    </div> -->
+
+    <div v-if="showBooks">
+      <li v-for="book in books">
+        <h2>{{book.title}}</h2>
+        <p>{{book.author}}</p>
+      </li>
+    </div>
+    
+    <!-- v-on allows to react to different types of events e.g. v-on:click-->
+    <!-- @click is a shorthand for v-on:click -->
+    
+    <button @click="age++">Increase Age</button>
+    <button @click="age--">Decrease Age</button>
+    <div @click="changeBookTitle">Change Book Title</div>
+
+    <!-- toggle button to show/hide books -->
+    <button @click="toggleShowBooks">
+      <span v-if="showBooks">Hide Books</span>
+      <span v-else>Show Books</span>
+    </button>
+
+    <p v-show="showBooks">Currently showing books.</p>
+
+
+    <!-- vue mouse events -->
+    <div class="box" @mouseover="handleEvent">mouse over
+    </div>
+    <div class="box" @mouseleave="handleEvent">mouse leave</div>
+    <div class="box" @dblclick="handleEvent">double click</div>
+    <div class="box" @mousemove="handleMousemove">mouse move
+      <p>position - {{x}} {{y}}</p>
+    </div>
+
+    <!-- display the current mouse events -->
+    <div>
+      event: {{ eventType }}
+    </div>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+ACTIVITY STUDENT REGISTRATION REQUIREMENTS
+
+- Use data (variables)
+- Apply data binding
+- Add confirmation modal using conditionals
+- Apply iterations to data
+- Display student list in cards to apply v-for
+- responsive
+- functions (validation and submit)
+- responsive to all screens
+- themed registration according to login page
+- apply computed
+- apply watch properties
+- use components for creating and updating student records using drawer
+- define props in each components
+- apply page routing
+- apply component communication using emit
+- local storage (pinia)
+
+Student form (data)
+- First name
+- Middle Initial
+- Last name
+- Birth date
+- Age ()validate age
+- address
+- course (constants): Bachelor of Science in Tourism, Bachelor of Science in Hotel and Restaurant Management, etc.,

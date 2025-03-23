@@ -1,0 +1,19 @@
+TYPESCRIPT
+freecodecamp typescript course - https://youtu.be/SpwzRDUQ1GI?si=wFnh03VFcfwWVxXi
+
+I. Why Learn Typescript?
+1. Confidence
+    - checks codee at compile time/live before it ever gets deployed. Thus, reducing runtime errors.
+2. Productivity
+  - turns on a number of neat features that make your life as a developer a LOT easier. Autocomplete, refactoring, immediate error checking.
+3. Employability
+  - Typescript is considered 'table stakes' by many companies, even if it isn't explicitly listed in job descriptions. Knowing even a little typescript can set you apart from other junior developer candidates.
+
+!!. Objectives
+- Basic literal, and custom typescript
+- optional properties
+- unions
+- type narrowing
+- utility types
+- generics
+

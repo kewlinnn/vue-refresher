@@ -1,0 +1,12 @@
+1. FOR VUE WIDGET
+
+1. create a vue app and store it in a constant
+2. mount the app to an element in the DOM
+
+
+2. CONDITIONAL RENDERING/ directives (v-if)
+  v-if="true" // will show the element
+  v-if="false" // will not show the element
+  v-show="" // same as v-if="true" but it is being controlled using only CSS (toggling between display:none/block)
+
+  v-for="item in books" //item is what you will name the item, and books is the name of the array.
